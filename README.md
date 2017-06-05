@@ -2,10 +2,10 @@
 
 Prerequisites:
 1. Ubuntu Server 17.04.
-2. 'root' user.
-3. 'demo' user (No root permissions).
-4. Configure SSH keys
-4. Login with 'demo' user.
+2. 'root' User.
+3. 'demo' User (No root Permissions).
+4. Configure SSH keys.
+5. Login with 'demo' user.
 
 In this document we'll cover:
 
@@ -14,8 +14,12 @@ In this document we'll cover:
     1. Using passwords
     2. Using SSH keys
 3. Installing Redis on a Ubuntu Server
-4. Installing NGINX on a Ubuntu Server
-5. More on APT-GET
+4. Configure Redis as a Service
+5. Installing NGINX on a Ubuntu Server
+6. More on APT-GET
+7. Create a New Linux User
+8. Create SSH Key Pair
+9. Switching User in Linux
 
 
 ## Installing Redis on a Ubuntu Server
@@ -38,8 +42,21 @@ We can use `ls` to see the downloaded files.
 
 `make` compiles the source code using the gcc/g++ compilers.
 
-`sudo make install` installs the compiled source by running a TCL script.
+`make install` installs the compiled source by running a TCL script.
 
+Redis is now installed. We can test this by running `redis-cli` which should give us an error as their is no instance of Redis running.
+
+To run a Redis instance we need a configuration file which we can create by using 'nano' editor.
+
+`sudo mkdir /etc/redis` create the directory.
+
+`sudo nano /etc/redis/6379.conf` opens/creates the file at '/etc/redis/6379.conf' in 'nano'
+
+If we just wanted to create a file without opening it we could have used `touch /etc/redis/6379.conf`
+
+`redis-server /etc/redis/6379.conf` run Redis Server with the config as a parameter.
+
+## Configure Redis as a Service
 
 ## Installing NGINX on a Ubuntu Server
 
@@ -50,3 +67,17 @@ We can use `ls` to see the downloaded files.
 ## More on APT-GET
 
 NODEJS 7 INSTALLATION
+
+## Create a New Linux User
+
+`sudo useradd -m <username>`
+
+`sudo passwd <username>`
+
+## Create SSH Key Pair
+
+https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys--2
+
+## Switching User in Linux
+
+`su - <username>`
