@@ -11,8 +11,9 @@ In this document we'll cover:
 
 1. Reading Linux Documentation
 2. Connecting to a Linux Machine
-    1. Using passwords
-    2. Using SSH keys
+    1. SSH Cients
+    2. Using passwords
+    3. Using SSH keys
 3. Installing Redis on a Ubuntu Server
 4. Configure Redis as a Service
 5. Installing NGINX on a Ubuntu Server
@@ -21,6 +22,43 @@ In this document we'll cover:
 8. Create SSH Key Pair
 9. Switching User in Linux
 
+## Reading Linux Documentation
+
+NO CONTENT
+
+## Connecting to a Linux Machine
+
+SSH stands for Secure Shell.
+
+Uses encryption to secure data with one of the follow ciphers:
+
+* aes128-ctr
+* aes192-ctr
+* aes256-ctr MACs
+    * hmac-sha1
+    * umac-64@openssh.com
+    * hmac-ripemd160
+    * hmac-sha1-96
+    * hmac-sha2-256
+    * hmac-sha2-512
+    * hmac-sha2-512-96
+
+### SSH Clients:
+
+* Putty
+* SuperPutty
+* Kitty
+* SmarTTY
+* mRemoteNG
+* Terminals
+
+### Using passwords
+
+NO CONTENT
+
+### Using SSH keys
+
+NO CONTENT
 
 ## Installing Redis on a Ubuntu Server
 
@@ -50,13 +88,15 @@ To run a Redis instance we need a configuration file which we can create by usin
 
 `sudo mkdir /etc/redis` create the directory.
 
-`sudo nano /etc/redis/6379.conf` opens/creates the file at '/etc/redis/6379.conf' in 'nano'
+`sudo nano /etc/redis/6379.conf` opens/creates the file at '/etc/redis/6379.conf' in 'nano'.
 
-If we just wanted to create a file without opening it we could have used `touch /etc/redis/6379.conf`
+If we just wanted to create a file without opening it we could have used `touch /etc/redis/6379.conf`.
 
 `redis-server /etc/redis/6379.conf` run Redis Server with the config as a parameter.
 
 ## Configure Redis as a Service
+
+NO CONTENT
 
 ## Installing NGINX on a Ubuntu Server
 
@@ -66,7 +106,7 @@ If we just wanted to create a file without opening it we could have used `touch 
 
 ## More on APT-GET
 
-NODEJS 7 INSTALLATION
+NO CONTENT
 
 ## Create a New Linux User
 
@@ -75,6 +115,8 @@ NODEJS 7 INSTALLATION
 `sudo passwd <username>`
 
 ## Create SSH Key Pair
+
+NO CONTENT
 
 https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys--2
 
