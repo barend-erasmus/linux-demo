@@ -24,7 +24,37 @@ In this document we'll cover:
 
 ## Reading Linux Documentation
 
-NO CONTENT
+A good place to find documentation on Linux Commands is at [Linux Command Reference Index](http://www.perpetualpc.net/srtd_commands_rev.html).
+
+The most common Linux Command format is:
+
+`[command] [options] [arguments]`
+
+For example:
+
+`ls --all /opt/`
+
+Where: 
+
+Command: `ls`
+
+Options: `--all`
+
+Arguments: `/opt/`
+
+Sometimes you may encounter documentation where the command is in the following format:
+
+`curl [options] -u <username>:<password> <url>`
+
+Note that there are two different brackets, <> and [].
+
+`<username>` means replace this with a username.
+
+`<password>` means replace this with a password.
+
+`<url>` means replace this with a url.
+
+`[options]` means replace this with a valid option of this command.
 
 ## Connecting to a Linux Machine
 
