@@ -84,7 +84,7 @@ Uses encryption to secure data with one of the follow ciphers:
 
 ### Using passwords
 
-NO CONTENT
+![]()
 
 ### Using SSH keys
 
