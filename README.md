@@ -84,11 +84,11 @@ Uses encryption to secure data with one of the follow ciphers:
 
 ### Using passwords
 
-![]()
+![](https://github.com/barend-erasmus/linux-demo/raw/master/images/putty-ssh-password.PNG)
 
 ### Using SSH keys
 
-NO CONTENT
+![](https://github.com/barend-erasmus/linux-demo/raw/master/images/putty-ssh-keys.PNG)
 
 ## Installing Redis on a Ubuntu Server
 
