@@ -126,7 +126,40 @@ If we just wanted to create a file without opening it we could have used `touch 
 
 ## Configure Redis as a Service
 
-NO CONTENT
+In this example we'll be create systemd services.
+
+'systemd' works with unit file which is what the service configuration file is called.
+
+These files contains configurations, such as:
+
+* Description.
+* When to start, before or after the network service.
+* Type of service.
+* What executable to execute.
+
+```
+
+[Unit]
+Description=Redis Server
+
+[Service]
+Type=forking
+ExecStart=/usr/local/bin/redis-server /etc/redis/6379.conf
+
+[Install]
+WantedBy=multi-user.target
+
+```
+
+When this file is created in `/etc/systemd/system` as 'my-redis.service', it's ready to be executed.
+
+To start a service we can run:
+
+`sudo systemctl start my-redis`
+
+and to stop a service:
+
+`sudo systemctl stop my-redis`
 
 ## Installing NGINX on a Ubuntu Server
 
