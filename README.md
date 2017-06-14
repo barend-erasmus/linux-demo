@@ -17,7 +17,6 @@ In this document we'll cover:
 3. Installing Redis on a Ubuntu Server
 4. Configure Redis as a Service
 5. Installing NGINX on a Ubuntu Server
-6. More on APT-GET
 7. Create a New Linux User
 8. Create SSH Key Pair
 9. Switching User in Linux
@@ -167,21 +166,11 @@ and to stop a service:
 2. `sudo apt-get install nginx`
 3. `sudo ufw allow 'Nginx HTTP'`
 
-## More on APT-GET
-
-NO CONTENT
-
 ## Create a New Linux User
 
 `sudo useradd -m <username>`
 
 `sudo passwd <username>`
-
-## Create SSH Key Pair
-
-NO CONTENT
-
-https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys--2
 
 ## Switching User in Linux
 
