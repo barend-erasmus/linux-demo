@@ -87,7 +87,7 @@ Uses encryption to secure data with one of the follow ciphers:
 
 ### Using SSH keys
 
-![](https://github.com/barend-erasmus/linux-demo/raw/master/images/putty-ssh-keys.PNG)
+![](https://github.com/barend-erasmus/linux-demo/raw/master/images/putty-ssh-keys.png)
 
 ## Installing Redis on a Ubuntu Server
 
