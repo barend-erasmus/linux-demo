@@ -95,7 +95,7 @@ Uses encryption to secure data with one of the follow ciphers:
 
 `sudo apt-get update` downloads the package lists from the repositories and "updates" them to get information on the newest versions of packages and their dependencies.
 
-`sudo apt-get install build-essential` installs all the packages needed to compile a debian package. Inlcudes the gcc/g++ compilers.
+`sudo apt-get install build-essential` installs all the packages needed to compile a debian package. Includes the gcc/g++ compilers.
 
 `sudo apt-get install tcl8.5` installs TCL which is a very powerful dynamic programming language.
 
@@ -142,8 +142,10 @@ These files contains configurations, such as:
 Description=Redis Server
 
 [Service]
-Type=forking
+User=root
+Group=root
 ExecStart=/usr/local/bin/redis-server /etc/redis/6379.conf
+Restart=always
 
 [Install]
 WantedBy=multi-user.target
