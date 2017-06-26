@@ -21,7 +21,7 @@ In this document we'll cover:
 8. Create SSH Key Pair
 9. Switching User in Linux
 
-## Reading Linux Documentation
+## Reading Documentation
 
 A good place to find documentation on Linux Commands is at [Linux Command Reference Index](http://www.perpetualpc.net/srtd_commands_rev.html).
 
@@ -55,7 +55,7 @@ Note that there are two different brackets, <> and [].
 
 `[options]` means replace this with a valid option of this command.
 
-## Connecting to a Linux Machine
+## Connecting to a Machine
 
 SSH stands for Secure Shell.
 
@@ -89,7 +89,7 @@ Uses encryption to secure data with one of the follow ciphers:
 
 ![](https://github.com/barend-erasmus/linux-demo/raw/master/images/putty-ssh-keys.png)
 
-## Installing Redis on a Ubuntu Server
+## Installing Redis
 
 `sudo` stands for 'superuser do'
 
@@ -162,18 +162,18 @@ and to stop a service:
 
 `sudo systemctl stop my-redis`
 
-## Installing NGINX on a Ubuntu Server
+## Installing NGINX
 
 1. `sudo apt-get update`
 2. `sudo apt-get install nginx`
 3. `sudo ufw allow 'Nginx HTTP'`
 
-## Create a New Linux User
+## Create a New User
 
 `sudo useradd -m <username>`
 
 `sudo passwd <username>`
 
-## Switching User in Linux
+## Switching User
 
 `su - <username>`
